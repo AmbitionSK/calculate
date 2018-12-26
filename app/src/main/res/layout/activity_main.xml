@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textSize="25sp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AC"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/button_shape_gray"
+                android:onClick="btnOnClick">
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Change"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/button_shape_gray"
+                android:onClick="btnOnClick">
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="%"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/button_shape_gray"
+                android:onClick="btnOnClick">
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="/"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_shape_orange"
+                android:onClick="btnOnClick">
+            </TextView>
+
+        </LinearLayout>
+
+        <!--数字区域-->
+
+        <LinearLayout
+            android:id="@+id/num_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="7"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="8"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="9"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="*"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_shape_orange"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="6"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_shape_orange"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_shape_orange"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="."
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="="
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_shape_orange"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--扩展功能区域-->
+
+        <LinearLayout
+            android:id="@+id/func_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="sin"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="cos"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="tan"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="log"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="exp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="sqrt"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="btnOnClick">
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
